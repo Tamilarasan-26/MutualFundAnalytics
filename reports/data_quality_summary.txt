@@ -1,0 +1,34 @@
+Data Quality Summary Report
+
+Project: Mutual Fund Analytics
+Date: 22 June 2026
+
+Dataset Review:
+
+1. Missing Values
+- 04_monthly_sip_inflows.csv contains 12 missing values in one column.
+- All other datasets contain no missing values.
+
+2. Duplicate Records
+- No duplicate records were found in any of the datasets.
+
+3. Initial Assessment
+- All datasets loaded successfully using Pandas.
+- Dataset structure appears consistent.
+- Further validation of AMFI codes and relationships between datasets is pending.
+
+4. AMFI Code Validation
+
+- All AMFI codes from 01_fund_master.csv were validated against 02_nav_history.csv.
+- Missing Codes: 0
+- Validation Status: PASS
+
+5. Overall Data Quality Status
+
+- Missing Values: Present in one column of 04_monthly_sip_inflows.csv (12 records).
+- Duplicate Rows: None found.
+- AMFI Validation: Passed.
+- Dataset Integrity: Good.
+
+Conclusion
+The datasets are generally clean and suitable for further analysis.
